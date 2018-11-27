@@ -1,0 +1,124 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.4.0",
+	"appid": "wxe04e81304960b5ef",
+	"projectname": "WhFood-wx",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 13,
+			"list": [
+				{
+					"id": -1,
+					"name": "编写文章详情",
+					"pathName": "pages/post/post-detail/post-detail",
+					"query": "id=2"
+				},
+				{
+					"id": -1,
+					"name": "编写文章详情",
+					"pathName": "pages/post/post-detail/post-detail",
+					"query": "id=1"
+				},
+				{
+					"id": -1,
+					"name": "编写文章详情",
+					"pathName": "pages/post/post-detail/post-detail",
+					"query": "id=2"
+				},
+				{
+					"id": -1,
+					"name": "登陆页面调试",
+					"pathName": "pages/login/login",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "视频页面调试",
+					"pathName": "pages/index/classroom/classroom",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "视频页面调试",
+					"pathName": "pages/index/recipe/recipe",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "视频页面调试",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "视频页面调试",
+					"pathName": "pages/index/recipe/recipe",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "视频页面调试",
+					"pathName": "pages/index/photos/photos",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "班级相册页面调试",
+					"pathName": "pages/index/photos/photoList/photoList",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "预约课程页面调试",
+					"pathName": "pages/index/make-appointment/make-appointment",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "预约课程页面调试",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "班级详情页面调试",
+					"pathName": "pages/classes/classDetail/classDetail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "班级页面",
+					"pathName": "pages/classes/classes"
+				}
+			]
+		}
+	}
+}

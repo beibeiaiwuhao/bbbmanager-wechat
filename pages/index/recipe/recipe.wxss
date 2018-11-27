@@ -1,0 +1,173 @@
+.container {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+.segment-view {
+  flex-direction: column;
+  height: 120rpx;
+  width: 100%;
+}
+
+.segment-button-view {
+ margin: 30rpx 40rpx;
+ display: flex;
+ border: 1px solid #ffb2c3;
+ border-radius: 60rpx;
+}
+
+.segment-input {
+  text-align: center;
+  height: 60rpx;
+  font-size: 28rpx;
+  color: #ffb2c3;
+  
+  border-right: 1px solid #ffb2c3;
+}
+
+.segment-input-last {
+  text-align: center;
+  height: 60rpx;
+  font-size: 28rpx;
+  color: #fff;
+  background-color: #ffb2c3;
+  border-top-left-radius: 30rpx;
+  border-bottom-left-radius: 30rpx;
+  border-right: 1px solid #ffb2c3;
+}
+.segment-input-this {
+  text-align: center;
+  height: 60rpx;
+  font-size: 28rpx;
+  color: #fff;
+  background-color: #ffb2c3;
+  border-right: 1px solid #ffb2c3;
+}
+.segment-input-next {
+  text-align: center;
+  height: 60rpx;
+  font-size: 28rpx;
+  color: #fff;
+  background-color: #ffb2c3;
+  border-top-right-radius: 30rpx;
+  border-bottom-right-radius: 30rpx;
+  border-right: 1px solid #ffb2c3;
+}
+
+
+
+
+.segment-button-view input:last-child {
+  border-right: none;
+}
+
+.week-recipe-view {
+  width: 100%;
+  height: 100%;
+}
+.recipe-view-show {
+   margin: 0rpx 0rpx;
+  height: 60rpx;
+  background-color: #FEF3F7;
+  text-align: center;
+  /* border: 1rpx solid #ffb2c3; */
+}
+
+.recipe-view-hide {
+  margin: 10rpx 0rpx;
+  height: 60rpx;
+  background-color: #fff;
+  text-align: center;
+  border: 1rpx solid #ffb2c3;
+}
+
+.week-name {
+  margin-right: 500rpx;
+  color: #ffb2c3;
+}
+
+.week-date {
+  color: #ffb2c3;
+}
+
+.detail-view-show {
+  display: block;
+  /* background-color: greenyellow; */
+}
+
+.detail-view-hide {
+  display: none;
+  /* display: block; */
+}
+
+.detail-week-view {
+  margin-left: 40rpx;
+  margin-top: 0rpx;
+  height: 130rpx;
+  /* background-color: red; */
+}
+
+.week-view1 {
+  width: 100%;
+  align-items: center;
+  display: flex;
+}
+
+
+.week-view1 image {
+  width: 82rpx;
+  height: 75rpx;
+}
+
+.week-view1 text {
+  margin-left: 10rpx;
+  font-size: 28rpx;
+  
+}
+
+.week-view2  {
+  margin-left: 92rpx;
+  margin-top: -35rpx;
+  display: flex;
+}
+
+.week-view2 text {
+  font-size: 24rpx;
+  color: gray;
+}
+
+.line-view {
+  width: 2rpx;
+  height: 40rpx;
+  margin-left: 41rpx;
+  margin-top: -10rpx;
+  margin-bottom: -10rpx;
+  background-color: lightgray;
+}
+
+.line-view:first-child {
+   margin-top: 0rpx;
+}
+
+.line-view:last-child {
+  margin-bottom: 0rpx;
+}
+
+.detail-week-view:last-child {
+  height: 60rpx;
+}
+
+.line-view-bottom {
+  width: 2rpx;
+  height: 60rpx;
+  margin-left: 41rpx;
+  
+  background-color: lightgray;
+}
+

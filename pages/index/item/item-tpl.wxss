@@ -1,0 +1,18 @@
+.item-container{
+  display: flex;
+  flex-direction: column;
+  padding: 0 25rpx;
+  background-color: white;
+  align-items: center;
+
+}
+.item-img{
+  width: 100rpx;
+  height: 100rpx;
+  padding-bottom: 20rpx;
+  padding-top: 20rpx;
+}
+.item-title{
+  margin-bottom: 8rpx;  
+  font-size: 24rpx;
+}

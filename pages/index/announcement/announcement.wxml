@@ -1,0 +1,12 @@
+<view class='container'>
+ 
+  <block  wx:for="{{notifyInfo}}" wx:for-item="notify" wx:for-index="index" >
+          <view class='category-item'>
+        <view class='text-ellipsis' catchtap='ellipsis' data-index='{{index}}'>
+         <text class="notify-desc {{ellipsis[index]?'unellipsis':'ellipsis'}}">{{notify.content}}</text>
+        </view>
+        <button  ></button>
+        <text class='notify-time'>{{notify.createTime}}</text>
+      </view>
+    </block>
+</view>

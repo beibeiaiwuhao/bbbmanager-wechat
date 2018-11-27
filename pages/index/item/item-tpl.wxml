@@ -1,0 +1,6 @@
+<template name="itemIndexTpl">
+  <view class='item-container' catchtap='onItemTap' data-page-code='{{category.pageCode}}'>
+    <image class='item-img' src="{{category.pictureUrl}}" ></image>
+    <text class='item-title'>{{category.pageName}}</text>
+  </view>
+</template>

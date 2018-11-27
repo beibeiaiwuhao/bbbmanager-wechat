@@ -1,0 +1,86 @@
+<view class='container'>
+
+  <view class='category-view'>
+    <view class='date-view'>
+      <image class='left-image' catchtap='lastDate' src='../../../../images/icon/icon_arrow_left.png'></image>
+      <!--  -->
+
+      <picker mode="date" value="{{dates}}" start="1978-01-01" end="{{dates}}" bindchange="bindDateChange">
+        <text class='picker'>{{dates}}</text>
+      </picker>
+      <image class='right-image' catchtap='nextDate' src='../../../../images/icon/icon_arrow-right.png'></image>
+    </view>
+
+  </view>
+
+  <view class='image-list-view'>
+    <view class='image-view'>
+      <image src='http://pcvfcha51.bkt.clouddn.com/photos-test1.png' mode='aspectFill'></image>
+    </view>
+
+    <view class='image-view'>
+      <image src='http://pcvfcha51.bkt.clouddn.com/photos-test1.png' mode='aspectFill'></image>
+    </view>
+
+    <view class='image-view'>
+      <image src='http://pcvfcha51.bkt.clouddn.com/photos-test1.png' mode='aspectFill'></image>
+    </view>
+
+    <view class='image-view'>
+      <image src='http://pcvfcha51.bkt.clouddn.com/photos-test1.png' mode='aspectFill'></image>
+    </view>
+
+    <view class='image-view'>
+      <image src='http://pcvfcha51.bkt.clouddn.com/photos-test1.png' mode='aspectFill'></image>
+    </view>
+
+    <view class='image-view'>
+      <image src='http://pcvfcha51.bkt.clouddn.com/photos-test1.png' mode='aspectFill'></image>
+    </view>
+
+    <view class='image-view'>
+      <image src='http://pcvfcha51.bkt.clouddn.com/photos-test1.png' mode='aspectFill'></image>
+    </view>
+
+    <view class='image-view'>
+      <image src='http://pcvfcha51.bkt.clouddn.com/photos-test1.png' mode='aspectFill'></image>
+    </view>
+
+    <view class='image-view'>
+      <image src='http://pcvfcha51.bkt.clouddn.com/photos-test1.png' mode='aspectFill'></image>
+    </view>
+
+
+    <view class='image-view'>
+      <image src='http://pcvfcha51.bkt.clouddn.com/photos-test1.png' mode='aspectFill'></image>
+    </view>
+
+    <view class='image-view'>
+      <image src='http://pcvfcha51.bkt.clouddn.com/photos-test1.png' mode='aspectFill'></image>
+    </view>
+
+    <view class='image-view'>
+      <image src='http://pcvfcha51.bkt.clouddn.com/photos-test1.png' mode='aspectFill'></image>
+    </view>
+
+    <view class='image-view'>
+      <image src='http://pcvfcha51.bkt.clouddn.com/photos-test1.png' mode='aspectFill'></image>
+    </view>
+
+    <view class='image-view'>
+      <image src='http://pcvfcha51.bkt.clouddn.com/photos-test1.png' mode='aspectFill'></image>
+    </view>
+
+    <view class='image-view'>
+      <image src='http://pcvfcha51.bkt.clouddn.com/photos-test1.png' mode='aspectFill'></image>
+    </view>
+
+    <view class='image-view'>
+      <image src='http://pcvfcha51.bkt.clouddn.com/photos-test1.png' mode='aspectFill'></image>
+    </view>
+
+
+  </view>
+
+
+</view>

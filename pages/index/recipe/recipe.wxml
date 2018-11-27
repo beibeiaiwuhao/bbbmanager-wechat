@@ -1,0 +1,43 @@
+<view class='container'>
+
+  <view class='segment-view'>
+    <view class='segment-button-view'>
+       <input class="{{segIndex==-1?'.segment-input-last':'segment-input'}}" disabled='disabled' bindtap='weekTap' data-segindex="-1"  value='上一周'></input>
+      <input class="{{segIndex==0?'.segment-input-this':'segment-input'}}" disabled='disabled' bindtap='weekTap' data-segindex='0' value='本周'></input>
+      <input class="{{segIndex==1?'.segment-input-next':'segment-input'}}" disabled='disabled' bindtap='weekTap' data-segindex='1' value='下一周'></input>
+    </view>
+  </view>
+
+  <block wx:for="{{recipeInfo}}" wx:for-item="recipe" wx:for-index="index">
+    <view class='week-recipe-view'>
+      <view class="{{ellipsis[index]?'recipe-view-show':'recipe-view-hide'}}" bindtap='showDetailRecipe' data-index='{{index}}'>
+        <text class='week-name'>{{recipe.dayName}}</text>
+        <text class='week-date'>{{recipe.dayDate}}</text>
+      </view>
+      <view class="{{ellipsis[index]?'detail-view-show':'detail-view-hide'}}">
+        <block wx:for="{{recipe.dayRecipeInfo}}" wx:for-item="dayRecipe" wx:for-index="index">
+          <view class='detail-week-view'>
+            <view class='line-view'></view>
+            <view class='week-view1'>
+              <image src='../../../images/icon/icon-receive-1.png'></image>
+              <text>{{dayRecipe.mealName}}</text>
+            </view>
+
+            <view class='line-view'></view>
+
+            <view class='week-view2'>
+              <text>{{dayRecipe.mealDesc}}</text>
+            </view>
+
+          </view>
+        </block>
+        <view class='detail-week-view'>
+          <view class='.line-view-bottom'></view>
+        </view>
+      </view>
+
+    </view>
+  </block>
+
+
+</view>

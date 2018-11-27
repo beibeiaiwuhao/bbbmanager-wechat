@@ -1,0 +1,44 @@
+<view class='container'>
+
+  <!-- 顶部的滑动照片 -->
+  <view class="cast">
+    <text class="cast-font"> {{photosInfo.currentDate}} 今日更新照片{{photosInfo.lastUpdateImg.length}}张</text>
+    <scroll-view class="cast-imgs" scroll-x="true" style="width:100%" bindscroll="getScrollViewWidth" scroll-left="50" >
+      <block wx:for="{{photosInfo.lastUpdateImg}}" wx:for-item="updateImg" wx:for-index="index">
+      <view class="{{index==scrollIndex?'cast-container-big':'cast-container-small'}}">
+        <image class="{{index==scrollIndex?'cast-img-big':'cast-img-small'}}"  mode='aspectFill' src="{{updateImg.photoUrl}}" data-src="{{updateImg.photoUrl}}"  catchtap="showCastImg"></image>
+      </view>
+      </block>
+    </scroll-view>
+  </view>
+
+  <!-- 下面的分门别类 -->
+
+  <view class='category-view'>
+    <text class="category-font"> 各个班级的相册</text>
+    <view class='theme-view' catchtap='showClassPhotos'>
+        <text class='theme-title'>各个班级的学习成长</text>
+        <text class='theme-count'>共{{photosInfo.gartenImgCount}}张</text>
+    </view>
+
+  </view>
+  <view class='category-view'>
+    <text class="category-font"> 活动相册</text>
+    <block wx:for="{{photosInfo.activityList}}" wx:for-item="activity" wx:for-index="index" >
+      <view class='theme-view-activity' style='background-image:url("{{activity.fileUrl}}");' >
+        <text class='theme-title'>{{activity.activityName}}</text>
+        <text class='theme-count'>共{{activity.imgCount}}张</text>
+    </view>
+    </block>
+
+    <!-- <view class='theme-view' style="background-image: url('http://pcvfcha51.bkt.clouddn.com/wx/photos/photos-bg-tmp3.png');">
+        <text class='theme-title'>一起去植树啦</text>
+        <text class='theme-count'>共102张</text>
+    </view> -->
+
+  </view>
+
+
+
+
+</view>

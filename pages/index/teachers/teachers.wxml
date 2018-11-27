@@ -1,0 +1,20 @@
+<view class='container'>
+  <view class='category-item'>
+  <block  wx:for="{{teacherInfo}}" wx:for-item="teacher" wx:for-index="index" >
+    <view class='detail-item'>
+      <image src='{{teacher.avatarImgUrl}}'></image>
+      <view class='text-view'>  
+        <text class='teacher-name'>名字：{{teacher.teacherName}}</text>
+        <text class='teacher-class'>所带班级：{{teacher.teacherClasses}}</text>
+      </view>
+      
+    </view>
+  </block>
+
+    
+   
+  </view>
+
+
+
+</view>

@@ -1,0 +1,18 @@
+@import "../item/item-tpl.wxss";
+
+.grid-container {
+  height: 800rpx;
+  /* margin: 40rpx 0 40rpx 6rpx; */
+  width: 100%;
+}
+
+.tmp-single-view {
+ float: left;
+  width: 25%;
+}
+
+.single-view-container {
+  margin: 1rpx 1rpx;
+}
+
+

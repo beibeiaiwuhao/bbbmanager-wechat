@@ -1,0 +1,43 @@
+@import "../single-item/single-item-tpl.wxss";
+
+
+.item-section-container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-container{
+    width: 100%;
+    margin: 0  auto 20rpx;
+}
+
+.item-head {
+  padding: 30rpx 20rpx 22rpx;
+}
+
+.slogan {
+  font-size: 24rpx;
+}
+
+.more {
+  float: right;
+}
+
+.more-text {
+  vertical-align: middle;
+  margin-right: 10rpx;
+  color: #4A6141;
+}
+
+.more-img {
+  width: 9rpx;
+  height: 16rpx;
+  vertical-align: middle;
+}
+
+.items-container{
+    display:flex;
+    float: left;
+    flex-direction: row;
+}

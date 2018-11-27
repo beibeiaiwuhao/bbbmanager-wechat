@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/classes/classes",
+    "pages/member/member",
+    "pages/login/login",
+    "pages/index/teachers/teachers",
+    "pages/index/announcement/announcement",
+    "pages/index/consulting/consulting",
+    "pages/index/classroom/classroom",
+    "pages/index/recipe/recipe",
+    "pages/index/photos/photos",
+    "pages/index/photos/photoClass/photoClass",
+    "pages/index/photos/photoList/photoList",
+    "pages/index/make-appointment/make-appointment",
+    "pages/classes/classDetail/classDetail",
+    "pages/component/dialog/dialog"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#4a6141",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "selecredColor": "#4a6141",
+    "color": "#333",
+    "backgroundColor": "#fff",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        
+        "iconPath": "images/icon/icon_index_none.png",
+        "selectedIconPath": "images/icon/icon_index_selected.png"
+      },
+      {
+        "pagePath": "pages/classes/classes",
+        "text": "班级",
+        "iconPath": "images/icon/icon-classes-none.png",
+        "selectedIconPath": "images/icon/icon-classes-selested.png"
+      },
+      {
+        "pagePath": "pages/member/member",
+        "text": "会员",
+        "iconPath": "images/icon/icon-member-none.png",
+        "selectedIconPath": "images/icon/icon-member-selected.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  }
+}

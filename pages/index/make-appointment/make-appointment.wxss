@@ -1,0 +1,107 @@
+@import '../../component/showToast/showToast.wxss';
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-hidden {
+    height: 0rpx;
+  display: none;
+}
+
+.category-view {
+  margin-top: 80rpx;
+}
+
+.detail-view {
+  flex-direction: row;
+  display: flex;
+  /* background-color: red; */
+  align-items: center;
+  height: 100rpx;
+}
+
+.detail-view text {
+  /* background-color:  green; */
+  font-size: 28rpx;
+  margin-left: 0rpx;
+  width: 200rpx;
+  text-align: right;
+}
+
+.detail-view input {
+  font-size: 28rpx;
+  margin-left: 20rpx;
+  width: 500rpx;
+  border: 2rpx solid lightgray;
+}
+
+.placeholder {
+  margin-left: 10rpx;
+  color: lightgray;
+}
+
+.text-tmp {
+  color: red;
+}
+
+.detail-view button {
+  color: white;
+  background-color: lightskyblue;
+  width: 200rpx;
+  height: 60rpx;
+  margin-left: 220rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
+}
+
+.detail-view-down {
+  margin-left: 220rpx;
+  /* background-color: red; */
+  flex-direction: column;
+  display: flex;
+  width: 505rpx;
+  margin-top: -30rpx;
+  border: 2rpx solid lightgray;
+}
+
+/* .detail-view-down text {
+  
+}  */
+
+.down-view-catgegory {
+  width: 100%;
+  text-align: center;
+  border-bottom: 2rpx solid lightgray;
+}
+
+
+.down-view-catgegory:last-child {
+  border-bottom:none;
+}
+
+
+.detail-view-hide {
+  height: 0rpx;
+  display: none;
+}
+
+
+.appointmentInfo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200rpx;
+}
+
+.appointmentInfo text {
+   font-size: 28rpx;
+  text-align: center;
+}
+
+.appointmentInfo-hidden {
+   height: 0rpx;
+  display: none;
+}
+

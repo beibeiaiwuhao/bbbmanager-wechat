@@ -1,0 +1,15 @@
+<view class="container">
+
+  <view class='category-item'>
+    <view class="detail-item" catchtap="showClassPhotos">
+      <text>苹果班</text>
+      <view class="detail-item-btn"></view>
+    </view>
+
+    <view class="detail-item" catchtap="showClassPhotos">
+      <text>橘子班</text>
+      <view class="detail-item-btn"></view>
+    </view>
+  </view>
+
+</view>

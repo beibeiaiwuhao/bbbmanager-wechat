@@ -1,0 +1,59 @@
+<import src="../../component/showToast/showToast.wxml" />
+<template is="showToast" data="{{showToast: showToast}}" />
+
+<view class="{{hasBook?'container-hidden':'container'}}">
+  <view class='category-view'>
+    <view class='detail-view'>
+      <text><text class='text-tmp'>*</text> 联系人:</text>
+      <input placeholder='请输入您的姓名' placeholder-class='placeholder' bindinput='contactNameInput'></input>
+    </view>
+
+    <view class='detail-view'>
+      <text><text class='text-tmp'>*</text> 联系电话:</text>
+      <input placeholder='请输入您的联系电话' placeholder-class='placeholder' bindinput='contactPhoneInput'></input>
+    </view>
+
+    <view class='detail-view'>
+      <text><text class='text-tmp'>*</text> 预约时间:</text>
+      <picker mode="date" value="{{dates}}" start="1978-01-01" end="{{dates}}" bindchange="bindDateChange">
+        <input id='bookTime' placeholder='请选择您的预约时间' disabled='disabled' placeholder-class='placeholder' value='{{choseDate}}'></input>
+      </picker>
+    </view>
+
+    <view class='detail-view'>
+      <text><text class='text-tmp'>*</text> 咨询课程:</text>
+      <input id='counselingCourse' placeholder='请选择您要预约的课程' disabled='disabled' bindtap='selectedClass' placeholder-class='placeholder' value='{{choseCourse}}' ></input>
+    </view>
+
+    <view class="{{isExpand?'detail-view':'detail-view-hide'}}" >
+      <view class='detail-view-down'>
+        <block wx:for="{{courseInfo}}" wx:for-item="course">
+               <view class='down-view-catgegory' bindtap='selectedCourse' data-course='{{course.courseName}}'>
+                   <text>{{course.courseName}}</text>
+               </view>
+        </block>
+      </view>
+    </view>
+
+    <view class='detail-view'>
+      <button type='primary' bindtap='makeAppointmentAction'>预约</button>
+    </view>
+  </view>
+
+</view>
+
+<view class="{{hasBook?'appointmentInfo':'appointmentInfo-hidden'}}">
+  <text>您已经预约过，预约信息如下\n 联系人：{{appointmentInfo.userName}}\n联系电话：{{appointmentInfo.mobile}} \n预约时间：{{appointmentInfo.apponitmentTime}} \n咨询课程：{{appointmentInfo.apponitmentClasses}} \n 请等待我们工作人员联系</text>
+</view>
+
+
+
+<dialog id='dialog' 
+      title='登录提示' 
+      content='小程序需要您的授权才能提供更好的服务哦' 
+      confirmText='知道了'
+      bind:confirmEvent='confirmEvent'
+      bind:bindGetUserInfo='bindGetUserInfo'>
+</dialog>
+
+

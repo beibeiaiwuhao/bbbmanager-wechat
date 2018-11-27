@@ -1,0 +1,125 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.cast {
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rpx;
+  margin-right: 20rpx;
+  /* background-color: red; */
+}
+
+.cast-font {
+  color: #92766d;
+  font-size: 28rpx;
+  margin-bottom: 30rpx;
+}
+
+.cast-container-big {
+  display: inline-flex;
+  flex-direction: column;
+  margin-right: 16rpx;
+  width: 220rpx;
+  height: 220rpx;
+  margin-top: -20rpx;
+  text-align: center;
+  align-items: center;
+  white-space: normal;
+  /* background-color: green; */
+}
+
+.cast-container-small {
+  display: inline-flex;
+  flex-direction: column;
+  margin-right: 16rpx;
+  width: 180rpx;
+  height: 180rpx;
+  text-align: center;
+  align-items: center;
+  white-space: normal;
+  /* background-color: green; */
+  -webkit-filter:grayscale(0.5) blur(0.5px);
+}
+
+.cast-imgs {
+  white-space: nowrap;
+}
+
+.cast-img-big {
+  width: 220rpx;
+  height: 220rpx;
+  color: blue;
+}
+
+.cast-img-small{
+  width: 180rpx;
+  height: 180rpx;
+  color: blue;
+}
+
+
+
+.category-view {
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20rpx;
+  /* background-color: rebeccapurple; */
+}
+
+.category-font {
+  color: #92766d;
+  font-size: 30rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+
+.theme-view {
+  background-image: url("http://pcvfcha51.bkt.clouddn.com/wx/photos/photos-bg-tmp1.png");
+  height: 280rpx;
+  width: 100%;
+  background-size: cover;
+  border-radius: 16rpx;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20rpx;
+}
+
+.theme-view-activity {
+  height: 280rpx;
+  width: 100%;
+  background-size: cover;
+  border-radius: 16rpx;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20rpx;
+}
+
+.theme-title {
+  margin-left: 35rpx;
+  margin-top: 50rpx;
+  font-size: 32rpx;
+  color: white;
+}
+
+.theme-count {
+  margin-left: 35rpx;
+  color: white;
+  margin-top: 110rpx;
+  width: 120rpx;
+  height: 36rpx;
+  background-color: orange;
+  text-align: center;
+  border-radius: 18rpx;
+}
+
+/* .theme-title-view {
+  width: 100%;
+}
+
+.theme-count-view {
+width: 100%;
+} */

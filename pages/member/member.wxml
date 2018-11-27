@@ -1,0 +1,38 @@
+<view class="container">
+ 
+  <view class="category-item personal-info">
+    <view class="user-avatar">
+      <image src="http://pcvfcha51.bkt.clouddn.com/image.jpg"></image>
+    </view>
+    <view class="user-name">
+      <view class="user-nickname">
+        <text>用户名{{userInfo.nickName}}</text>
+      </view>
+      <view class="user-locaiton">
+        <text>孩子名字：{{userInfo.country+userInfo.province+userInfo.city}}</text>
+      </view>
+    </view>
+  </view>
+
+ <view class="category-item">
+    <!-- <block wx:for="{{cache}}"> -->
+      <view class="detail-item" catchtap="{{item.tap}}">
+        <image src="{{item.iconurl}}"></image>
+        <text>我的课程</text>
+        <view class="detail-item-btn"></view>
+      </view>
+
+       <view class="detail-item" catchtap="{{item.tap}}">
+        <image src="{{item.iconurl}}"></image>
+        <text>续费咨询</text>
+        <view class="detail-item-btn"></view>
+      </view>
+
+       <view class="detail-item" catchtap="{{item.tap}}">
+        <image src="{{item.iconurl}}"></image>
+        <text>问题反馈</text>
+        <view class="detail-item-btn"></view>
+      </view>
+    <!-- </block> -->
+  </view>
+</view>

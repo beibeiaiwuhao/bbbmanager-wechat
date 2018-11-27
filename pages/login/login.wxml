@@ -1,0 +1,32 @@
+<import src="../component/showToast/showToast.wxml" />
+<template is="showToast" data="{{showToast: showToast}}" />
+
+<view class='container'>
+
+  <view class='login-item-input'>
+    <view class='detail-item'>
+      <text>+86</text>
+      <input placeholder='请输入手机号码' bindinput='mobilePhoneInput'></input>
+      <button catchtap='getCode' class="{{is_show?'checkCode':'checkCode-hidden'}}"  type="warn"> 获取验证码 </button>
+      <button class="{{!is_show?'checkCode':'checkCode-hidden'}}" type="warn"> 重新发送{{last_time}}秒 </button>
+    </view>
+
+    <view class='detail-item'>
+      <text>验证码</text>
+      <input bindinput='codeInput' placeholder='请输入验证码'></input>
+    </view>
+  </view>
+
+  <!-- <view class='login-item'>
+    <view class='login-itme-radio'>
+      <text>老师</text>
+      <radio id='user'></radio>
+    </view>
+    <view class='login-itme-radio'>
+      <text>家长</text>
+      <radio id='user'></radio>
+    </view>
+  </view> -->
+
+  <button class='loginButton' catchtap='login' type='primary'> 登 录 </button>
+</view>

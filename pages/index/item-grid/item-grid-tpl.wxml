@@ -1,0 +1,15 @@
+<import src="../item/item-tpl.wxml" />
+
+<template name="itemGridTpl">
+  <view class='grid-container'>
+
+    <block wx:for="{{categoryContent}}" wx:for-item="category">
+      <view class='tmp-single-view'>
+        <view class='single-view-container'>
+          <template is="itemIndexTpl" data="{{category}}" />
+        </view>
+      </view>
+    </block>
+
+  </view>
+</template>

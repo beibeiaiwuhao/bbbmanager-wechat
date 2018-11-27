@@ -1,0 +1,14 @@
+<view class='container'>
+
+  <view class='category-item'>
+    <block wx:for="{{videoInfo}}" wx:for-item="video" wx:for-index="index">
+      <view class='detail-item'>
+        <text>{{video.videoName}}</text>
+        <view class='detail-video'>
+          <video src="{{video.videoUrl}}" binderror="videoErrorCallback"></video>
+        </view>
+      </view>
+    </block>
+  </view>
+
+</view>

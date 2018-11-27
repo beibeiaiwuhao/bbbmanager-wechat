@@ -1,0 +1,23 @@
+@import "item-section/item-section-tpl.wxss";
+
+page{
+  height: 100%;
+}
+
+.section-tpl {
+  width: 100%;
+  height: 30rpx;
+  background-color: #f2f2f2;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: #f2f2f2;
+  /* background-color: red; */
+}
+
+.items-template {
+  margin-bottom: 30rpx;
+}
+

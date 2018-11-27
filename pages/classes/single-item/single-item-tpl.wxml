@@ -1,0 +1,7 @@
+<template name="itemTpl">
+  <view class='item-container' catchtap='onItemTap' data-item-id='{{itemId}}'>
+    <image class='item-img' mode='aspectFill' src="{{student!=null? student.avatarImgUrl:'http://pcvfcha51.bkt.clouddn.com/u=3337909622,452079418&fm=27&gp=0.jpg' }}"></image>
+    <text class='item-title'>{{teacher==null?student.studentName:teacher.teacherName}}</text>
+    <text class='item-desc'>{{teacher==null?student.courseName:teacher.positionName}}</text>
+  </view>
+</template>

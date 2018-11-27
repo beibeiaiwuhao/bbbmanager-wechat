@@ -1,0 +1,16 @@
+<import src="item-grid/item-grid-tpl.wxml" />
+
+<view>
+  <swiper vertical='{{false}}' catchtap="onSwiperTap" indicator-dots='true' autoplay='true' interval='1000'>
+
+    <block wx:for="{{panelContent.picUrl}}" wx:for-item="panel">
+      <swiper-item>
+        <image src='{{panel}}' data-post-id='{{panelContent.productId}}'></image>
+      </swiper-item>
+    </block>
+    
+  </swiper>
+</view>
+<view class='container'>
+  <template is="itemGridTpl" data="{{categoryContent}}" />
+</view>

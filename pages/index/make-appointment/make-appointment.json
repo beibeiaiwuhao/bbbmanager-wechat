@@ -1,0 +1,7 @@
+{
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "预约课程",
+  "usingComponents": {
+    "dialog": "../../component/dialog/dialog"
+  }
+}

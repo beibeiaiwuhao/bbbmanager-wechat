@@ -1,0 +1,9 @@
+<import src="../single-item/single-item-tpl.wxml" />
+
+<view class='container'>
+  <view class='category-view'>
+      <block wx:for="{{studentInfo}}" wx:for-item="student" wx:for-index="index" >
+        <template is="itemTpl" data="{{student}}" />
+      </block>
+  </view>
+</view>

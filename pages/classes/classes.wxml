@@ -1,0 +1,12 @@
+<import src="item-section/item-section-tpl.wxml" />
+
+<view class='container' >
+      
+      <block wx:for="{{classList}}" wx:for-item="class" wx:for-index="index" wx:key="classId">
+         <view class='items-template'>
+              <template is="itemSectionTpl" data="{{class}}" />
+          </view>
+      </block>
+
+ 
+</view>

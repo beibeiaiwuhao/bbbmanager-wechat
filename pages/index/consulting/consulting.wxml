@@ -1,0 +1,30 @@
+<view class='container'>
+  
+  <image class='top-image' src='{{gartenInfo.pictureUrl}}'></image>  
+
+  <view class='category-item'>
+    
+    <view class='detail-item' catchtap='showMap'>
+      <image src='../../../images/icon/icon-position.png'></image>
+      <text>{{gartenInfo.province}}{{gartenInfo.city}}{{gartenInfo.area}}{{gartenInfo.gardenAddress}}</text>
+    </view>
+
+    <view class='detail-item' catchtap='makeCall' data-gartenphone='{{gartenInfo.gardenPhone}}'>
+      <image src='../../../images/icon/icon-phone.png'></image>
+      <text>{{gartenInfo.gardenPhone}}</text>
+    </view>
+
+  </view>
+
+<view class='category-item-other'>
+  <view class='bottom-view'>
+  <text class='bottom-text'>
+  {{gartenInfo.gardenConcept}}
+  
+  </text>
+  </view>
+
+</view>
+
+</view>
+

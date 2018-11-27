@@ -1,0 +1,20 @@
+<import src="../single-item/single-item-tpl.wxml" />
+
+<template name="itemSectionTpl">
+  <view class='item-section-container'>
+    <view class='inner-container'>
+      <view class='item-head'>
+        <text class='slogan'>{{class.className}}</text>
+        <view catchtap='onMoreTap' class='more' data-classId='{{class.classId}}'>
+          <text class='more-text'>班级详情</text>
+          <image class='more-img' src='/images/icon/wx_app_arrow_right.png'></image>
+        </view>
+      </view>
+      <view class='items-container'>
+        <block wx:for="{{class.teacherList}}" wx:for-item="teacher">
+              <template is="itemTpl" data="{{teacher}}" />
+          </block>
+      </view>
+    </view>
+  </view>
+</template>
